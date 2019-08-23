@@ -1,0 +1,38 @@
+<br>
+<br>
+<div align="center">
+    
+  <mat-card class="example-card">
+
+    <mat-progress-bar *ngIf="temp" mode="indeterminate"></mat-progress-bar>
+    <br>
+    <mat-card-header>
+      
+      <mat-card-title><strong>Login to Heaven</strong></mat-card-title>
+      
+    </mat-card-header>
+    
+    <mat-card-content>
+      <form>
+      <mat-form-field appearance="outline" >
+          <mat-label>Email</mat-label>
+        <input [disabled]="temp"  matInput placeholder="example@domain.com">
+        <mat-icon matSuffix>email</mat-icon>
+
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+
+        <input [disabled]="temp" type="Password" matInput placeholder="Password">
+        <mat-icon matSuffix>remove_red_eye</mat-icon>
+
+      </mat-form-field>
+    </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button (click)="getFoods()" mat-raised-button color="primary">Login</button>
+      
+    </mat-card-actions>
+  </mat-card>
+</div>
