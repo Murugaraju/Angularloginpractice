@@ -1,7 +1,7 @@
 .example-card {
     max-width: 400px;
     align-content: center;
-    box-shadow: 0 9px 5px -1px #1897e1, 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    box-shadow: 0 1px 1px 1px #5c1691, 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
 
 
   }
@@ -9,3 +9,11 @@
  .mat-card .mat-form-field {
    width:100%
  }
+ .mat-progress-bar {
+  display: block;
+  height: 2px;
+  overflow: hidden;
+  position: relative;
+  transition: opacity 250ms linear;
+  width: 31.6%;
+}

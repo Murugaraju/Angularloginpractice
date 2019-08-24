@@ -8,7 +8,7 @@ CORS(app)
 @app.route('/bro')
 def hello():
 	
-
+    time.sleep(10)
     return json.dumps({"fruit":"apple"})
 
 if __name__ == '__main__':

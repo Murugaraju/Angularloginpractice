@@ -1,10 +1,10 @@
 <br>
 <br>
 <div align="center">
-    
+  <mat-progress-bar *ngIf="temp"  mode="indeterminate"></mat-progress-bar>
   <mat-card class="example-card">
 
-    <mat-progress-bar *ngIf="temp" mode="indeterminate"></mat-progress-bar>
+    
     <br>
     <mat-card-header>
       
@@ -13,7 +13,7 @@
     </mat-card-header>
     
     <mat-card-content>
-      <form>
+      <form action="submit">
       <mat-form-field appearance="outline" >
           <mat-label>Email</mat-label>
         <input [disabled]="temp"  matInput placeholder="example@domain.com">
@@ -31,7 +31,7 @@
     </form>
     </mat-card-content>
     <mat-card-actions>
-      <button (click)="getFoods()" mat-raised-button color="primary">Login</button>
+      <button [disabled]="temp"  (click)="getFoods()" mat-raised-button color="primary">Login</button>
       
     </mat-card-actions>
   </mat-card>
