@@ -15,5 +15,7 @@
   overflow: hidden;
   position: relative;
   transition: opacity 250ms linear;
-  width: 31.6%;
+  width: 106%;
+    bottom: 17px;
+    right: 13px;
 }
